@@ -1,0 +1,32 @@
+version: "3"
+# THIS FILE IS USED FOR LOCAL TESTING ONLY. CHANGES MADE HERE WILL NOT BE REFLECTED IN ANY OTHER ENVIRONMENT
+services:
+  powerbank-be:
+    build: .
+    ports:
+      - 3000:3000
+      - 9229:9229
+    environment:
+      - AWS_ACCESS_KEY_ID="$AWS_ACCESS_KEY"
+      - AWS_SECRET_ACCESS_KEY="$AWS_ACCESS_SECRET"
+      - DB_PREFIX=mongodb
+      - DB_HOST=powerbankdb
+      - DB_PORT=:27017
+      - DB_USERNAME=root
+      - DB_PASSWORD=example
+      - DB_DATABASE=powerbank
+      - google_api=https://oauth2.googleapis.com/tokeninfo?id_token=
+      - facebook_api=https://graph.facebook.com/v8.0/me?fields=email,name,friends,picture.width(600)&access_token=
+      - STRIPE_SECREATE_KEYE=sk_test_51HFDA0DLPOWvN2NLGe1f2xXoQwHpYLeucpbtaL9q462kPWjKcNa4yCWfWwjpnRoj002T2Es8sQmhLe9l0nhrwWEz00JjOYhuta
+      - IOT_RETURN_URL=https://uzjyrz36bb.execute-api.us-east-1.amazonaws.com/dev/iot/trigger
+    command: "runtime/run.sh"
+    depends_on:
+      - powerbankdb
+  powerbankdb:
+    image: mongo:4.2.9
+    restart: always
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=example
+    ports:
+      - 27017:27017

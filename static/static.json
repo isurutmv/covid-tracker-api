@@ -1,0 +1,556 @@
+{
+  "HTTP_RESPONSE": {
+    "HTTP_SUCCESS": 200,
+    "HTTP_CREATED": 201,
+    "HTTP_NOT_FOUND": 404,
+    "HTTP_ERROR": 401,
+    "HTTP_BAD_REQUEST": 400,
+    "HTTP_FORBIDDEN": 403,
+    "HTTP_INTERNAL_SERVER_ERROR": 500,
+    "HTTP_VALIDATION_ERROR": 422
+  },
+  "NOTIFICATION": {
+    "DELETED": "Notification Deleted",
+    "EVENT": {
+      "MERCHANT_ADDED": "MERCHANT_ADDED",
+      "MERCHANT_DELETED": "MERCHANT_DELETED",
+      "POWER_STATION_OFF": "POWER_STATION_OFF",
+      "ADD_POWER_BANK": "ADD_POWER_BANK",
+      "NO_POWER_BANK": "NO_POWER_BANK"
+    }
+  },
+  "TICKETS": {
+    "DEFAULT_MESSAGE": "Hi, Welcome to the ZE Power Support Center! How can we help you?"
+  },
+  "TICKET_STATUS": {
+    "OPEN": "OPEN",
+    "PENDING": "PENDING",
+    "CLOSED": "CLOSED"
+  },
+  "FIRBASE": {
+    "DATABSE": "https://poetic-abacus-286008.firebaseio.com",
+    "POWER_BANK_RETURN_TITILE": "Return Power Bank",
+    "POWER_BANK_RETURN_BODY": "Power Bank Has Been Return",
+    "POWER_BANK_REMINDER_TITLE": "You have ongoing rental",
+    "FIRST_REMINDER_BODY": "We kindly remind you to return the power bannk within 48 Hours",
+    "SECOUND_REMINDER_BODY": "We kindly remind you to return the power bannk within 24 Hours",
+    "POWER_BANK_LOST_TITLE": "We Lost The Power Bank",
+    "POWER_BANK_LOST_BODY": "We deduct Full amount from your payment method",
+    "REFUND_STATUS": "Your Refund Request Has Been "
+  },
+  "DEVICE_TYPES": {
+    "ANDROID": "android",
+    "IOS": "ios"
+  },
+  "WITHDRAWN_STATUS": {
+    "PENDING": "PENDING",
+    "APPROVED": "APPROVED",
+    "REJECTED": "REJECTED",
+    "ALL": "ALL"
+  },
+  "STATISTICS": {
+    "months": [
+      "",
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December"
+    ],
+    "YEAR": "year"
+  },
+  "REFUND_STATUS": {
+    "REQUESTED": "REQUESTED",
+    "PROCESSING": "PROCESSING",
+    "REJECTED": "REJECTED",
+    "APPROVED": "APPROVED",
+    "COMPLETED": "COMPLETED"
+  },
+  "RESPONSE_SUCCESS": {
+    "TRUE": true,
+    "FALSE": false
+  },
+  "IOT": {
+    "DASHBOARD_TITLE": "ZE POWER IOT",
+    "ACCESS_KEY": "France200825",
+    "SECRET_KEY": "8n4rZVZoc3",
+    "PRODUCT_CODE": "a5hNz9tgELQ",
+    "BASE_URL": "http://47.245.134.196:9666",
+    "GET_POWER_BANK_URL": "/consumemns/get_mns/",
+    "GET_POWER_STATION_URL": "/account/get_device_list/",
+    "QR_CODE_BIND":"/device/request_bind_qrcode/",
+    "GET_TOKEN_URL": "/account/get_token/",
+    "HEART_BEAT_URL": "/device/request_send_heartbeat_packet/",
+    "RETURN_URL": "https://uzjyrz36bb.execute-api.us-east-1.amazonaws.com/dev/iot/trigger",
+    "ACTIVE_DEVICE": "/device/get_device_activate/",
+    "SEND_RETURN_URL": "/consumemns/mns_return_url/",
+    "EJECT_URL": "/device/request_popup_battery/",
+    "REQUEST_DEVICE_ACTIVE": "/device/request_activate_device/",
+    "POWER_STATION_STATUS": {
+      "INACTIVE": "UNACTIVE",
+      "ONLINE": "ONLINE",
+      "OFFLINE": "OFFLINE"
+    },
+    "POWER_STATION_ACTIVATED": "Power Station Already Activated"
+  },
+  "USER_STATUS": {
+    "ACTIVE": 1,
+    "DELETED": 0,
+    "ON_HOLD": 2,
+    "SUSPENDED": 3
+  },
+  "CHARGES": {
+    "DEFAULT": 50,
+    "LOST_CHARGE": 120
+  },
+  "DURATIONS": {
+    "LOST_DURATION": 4320
+  },
+  "NOTIFICATIONS": {
+    "RETURN_NOTIFICATION": "return",
+    "FIRST_NOTIFICATION": "first",
+    "SECOUND_NOTIFICATION": "secound",
+    "LOST_NOTIFICATION": "lost",
+    "REFUND_STATUS": "refund"
+  },
+  "WALLET_STATUS": {
+    "ACTIVE": "ACTIVE",
+    "CLOSED": "CLOSED",
+    "SUSPENDED": "SUSPENDED"
+  },
+  "TRANSACTION_TYPE": {
+    "CREDIT": "CREDIT",
+    "DEBIT": "DEBIT"
+  },
+  "TRANSACTION_STATUS": {
+    "SUCESS": "SUCCESS",
+    "FAILD": "FAILED",
+    "REFUNDED": "REFUNDED",
+    "REFUND_REQUESTED": "PENDING"
+  },
+  "RENTAL_STATUS": {
+    "ONGOING": "ongoing",
+    "RENTED": "rented",
+    "RETURND": "returned",
+    "LOST": "lost",
+    "COMPLETED": "completed"
+  },
+  "STRIPE": {
+    "CARD": "card",
+    "ACCOUNT": "account",
+    "DEFAULT_CURRENCY": "eur",
+    "VERIFICATION_AMOUNT": "100",
+    "MINIMUM_AMOUNT": 50,
+    "VERIFICATION_REQUIRED": "requires_action",
+    "OFF_SESSION": "off_session",
+    "SECURE_REQUIERD": "any",
+    "VERIFY_SUCESS": "succeeded"
+  },
+  "VALIDATION": {
+    "ANY_EMPTY": "any.empty",
+    "STRING_BASE": "string.base",
+    "ANY_REQUIRED": "any.required",
+    "STRING_EMAIL": "string.email",
+    "JWT_MALFORMED": "jwt malformed",
+    "JWT_EXPIRED": "jwt expired",
+    "STRING_MIN": "string.min",
+    "STRING_MAX": "string.max",
+    "ARRAY_INCLUDE_ONE": "array.includesOne",
+    "NUMBER_BASE": "number.base",
+    "ARRAY_MIN": "array.min",
+    "ARRAY_MAX": "array.max",
+    "ARRAY_NOT_EMPTY": "array.includesRequiredUnknowns"
+  },
+  "MONGOOSE_VALIDATION_CODE": {
+    "DUPLICATE_DATA": 11000
+  },
+  "LOGIN_TYPE": {
+    "BY_EMAIL": "BY_EMAIL",
+    "BY_MOBILE": "BY_MOBILE",
+    "BY_GOOGLE": "BY_GOOGLE",
+    "BY_FACEBOOK": "BY_FACEBOOK"
+  },
+  "SMS": {
+    "OTP_CODE_MESSAGE": "Your Verification Code is : ",
+    "ALREADY_USE": "This Number Already Used",
+    "CODE_SENT": "Verification Code Sent",
+    "NOT_REGISTERED": "You are Not a Registered User",
+    "INVALID": "Invalid OTP",
+    "apiVersion": "2010-03-31",
+    "VERIFIED": "Verified",
+    "RESEND": "Resend",
+    "SENT": "sent",
+    "EXPIRED": "Your OTP is Expired",
+    "MOBILE_UPDATED": "Mobile Number Updated",
+    "UNDEFINED": "Undefined Error",
+    "UPDATED_USER": "User Updated Successfully",
+    "EMAIL_ALEARDY_USE": "Email Already Used",
+    "MOBILE_NOT_VERIFIED": "Mobile Number is not verified"
+  },
+  "LOGGER": {
+    "INFO": "info",
+    "ERROR": "error",
+    "LOGIN_API_START": "LOGIN_API_START | ",
+    "LOGIN_API_SUCCESS": "LOGIN_API_SUCCESS | ",
+    "LOGIN_API_END": "LOGIN_API_END | ",
+    "PERMISSION_API_START": "PERMISSION_API_START | ",
+    "PERMISSION_API_END": "PERMISSION_API_END | ",
+    "PERMISSION_API_SUCESS": "PERMISSION_API_SUCCESS | ",
+    "ROLE_API_START": "ROLE_API_START | ",
+    "ROLE_API_SUCESS": "ROLE_API_SUCCESS | ",
+    "ROLE_API_END": "ROLE_API_END | ",
+    "REFRESH_TOKEN_API_START": "REFRESH_TOKEN_API_START | ",
+    "REFRESH_TOKEN_API_SUCCESS": "REFRESH_TOKEN_API_SUCCESS | ",
+    "REFRESH_TOKEN_API_END": "REFRESH_TOKEN_API_END | ",
+    "SIGN_UP_API_START": "SIGN_UP_API_START | ",
+    "SIGN_UP_API_SUCCESS": "SIGN_UP_API_SUCCESS | ",
+    "SIGN_UP_API_END": "SIGN_UP_API_END | ",
+    "FORGOT_PASSWORD_API_START": "FORGOT_PASSWORD_API_START | ",
+    "FORGOT_PASSWORD_API_SUCCESS": "FORGOT_PASSWORD_API_SUCCESS | ",
+    "FORGOT_PASSWORD_API_END": "FORGOT_PASSWORD_API_END | ",
+    "CONFIRM_FORGOT_PASSWORD_API_START": "CONFIRM_FORGOT_PASSWORD_API_START | ",
+    "CONFIRM_FORGOT_PASSWORD_API_SUCCESS": "CONFIRM_FORGOT_PASSWORD_API_SUCCESS | ",
+    "CONFIRM_FORGOT_PASSWORD_API_END": "CONFIRM_FORGOT_PASSWORD_API_END | ",
+    "CHANGE_PASSWORD_API_START": "CHANGE_PASSWORD_API_START | ",
+    "CHANGE_PASSWORD_API_SUCCESS": "CHANGE_PASSWORD_API_SUCCESS | ",
+    "CHANGE_PASSWORD_API_END": "CHANGE_PASSWORD_API_END | ",
+    "GET_PROFILE_API_START": "GET_PROFILE_API_START | ",
+    "GET_PROFILE_API_SUCCESS": "GET_PROFILE_API_SUCCESS | ",
+    "GET_PROFILE_API_END": "GET_PROFILE_API_END | ",
+    "UPDATE_PROFILE_API_START": "UPDATE_PROFILE_API_START | ",
+    "UPDATE_PROFILE_API_SUCCESS": "UPDATE_PROFILE_API_SUCCESS | ",
+    "UPDATE_PROFILE_API_END": "UPDATE_PROFILE_API_END | ",
+    "CREATE_POWER_STATION_API_START": "CREATE_POWER_STATION_API_START | ",
+    "CREATE_POWER_STATION_API_SUCCESS": "CREATE_POWER_STATION_API_SUCCESS | ",
+    "CREATE_POWER_STATION_API_END": "CREATE_POWER_STATION_API_END | ",
+    "GOOGLE_LOGIN_API_START": "GOOGLE_LOGIN_API_START | ",
+    "GOOGLE_LOGIN_API_SUCCESS": "GOOGLE_LOGIN_API_SUCCESS | ",
+    "GOOGLE_LOGIN_API_END": "GOOGLE_LOGIN_API_END | ",
+    "FACEBOOK_LOGIN_API_SUCCESS": "FACEBOOK_LOGIN_API_SUCCESS | ",
+    "FACEBOOK_LOGIN_API_START": "FACEBOOK_LOGIN_API_START | ",
+    "FACEBOOK_LOGIN_API_END": "FACEBOOK_LOGIN_API_END | ",
+    "GET_ALL_POWER_STATION_API_START": "GET_ALL_POWER_STATION_API_START | ",
+    "GET_ALL_POWER_STATION_API_SUCCESS": "GET_ALL_POWER_STATION_API_SUCCESS | ",
+    "GET_ALL_POWER_STATION_API_END": "GET_ALL_POWER_STATION_API_END | ",
+    "GET_POWER_STATION_API_START": "GET_POWER_STATION_API_START | ",
+    "GET_POWER_STATION_API_SUCCESS": "GET_POWER_STATION_API_SUCCESS | ",
+    "GET_POWER_STATION_API_END": "GET_POWER_STATION_API_END | ",
+    "UPDATE_POWER_STATION_API_START": "UPDATE_POWER_STATION_API_START | ",
+    "UPDATE_POWER_STATION_API_SUCCESS": "UPDATE_POWER_STATION_API_SUCCESS | ",
+    "UPDATE_POWER_STATION_API_END": "UPDATE_POWER_STATION_API_END | ",
+    "DELETE_POWER_STATION_API_START": "DELETE_POWER_STATION_API_START | ",
+    "DELETE_POWER_STATION_API_SUCCESS": "DELETE_POWER_STATION_API_SUCCESS | ",
+    "DELETE_POWER_STATION_API_END": "DELETE_POWER_STATION_API_END | ",
+    "CREATE_LOCATION_API_START": "CREATE_LOCATION_API_START | ",
+    "CREATE_LOCATION_API_SUCCESS": "CREATE_LOCATION_API_SUCCESS | ",
+    "CREATE_LOCATION_API_END": "CREATE_LOCATION_API_END | ",
+    "GET_ALL_LOCATION_API_START": "GET_ALL_LOCATION_API_START ",
+    "GET_ALL_LOCATION_API_SUCCESS": "GET_ALL_LOCATION_API_SUCCESS | ",
+    "GET_ALL_LOCATION_API_END": "GET_ALL_LOCATION_API_END | ",
+    "UPDATE_LOCATION_API_START": "UPDATE_LOCATION_API_START | ",
+    "UPDATE_LOCATION_API_SUCCESS": "UPDATE_LOCATION_API_SUCCESS ",
+    "UPDATE_LOCATION_API_END": "UPDATE_LOCATION_API_END ",
+    "DELETE_LOCATION_API_START": "DELETE_LOCATION_API_START ",
+    "DELETE_LOCATION_API_SUCCESS": "DELETE_LOCATION_API_SUCCESS ",
+    "DELETE_LOCATION_API_END": "DELETE_LOCATION_API_END ",
+    "MOBILE_SIGNUP_API_START": "MOBILE_SIGNUP_API_START",
+    "MOBILE_SIGNUP_API_SUCCESS": "MOBILE_SIGNUP_API_SUCCESS",
+    "MOBILE_SIGNUP_API_END": "MOBILE_SIGNUP_API_END",
+    "MOBILE_SIGNIN_API_START": "MOBILE_SIGNIN_API_START",
+    "MOBILE_SIGNIN_API_SUCCESS": "MOBILE_SIGNIN_API_SUCCESS",
+    "MOBILE_SIGNIN_API_END": "MOBILE_SIGNIN_API_END",
+    "MOBILE_OTP_VERIFY_API_START": "MOBILE_OTP_VERIFY_API_START",
+    "MOBILE_OTP_VERIFY_API_SUCCESS": "MOBILE_OTP_VERIFY_API_SUCCESS",
+    "MOBILE_OTP_VERIFY_API_END": "MOBILE_OTP_VERIFY_API_END",
+    "MOBILE_OTP_RESEND_API_START": "MOBILE_OTP_RESEND_API_START",
+    "MOBILE_OTP_RESEND_API_SUCEESS": "MOBILE_OTP_RESEND_API_SUCEESS",
+    "MOBILE_OTP_RESEND_API_END": "MOBILE_OTP_RESEND_API_END",
+    "MOBILE_UPDATE_API_START": "MOBILE_UPDATE_API_START",
+    "MOBILE_UPDATE_API_SUCEESS": "MOBILE_UPDATE_API_SUCEESS",
+    "MOBILE_UPDATE_API_END": "MOBILE_UPDATE_API_END",
+    "MOBILE_UPDATE_VERIFY_API_START": "MOBILE_UPDATE_API_END",
+    "MOBILE_UPDATE_VERIFY_API_SUCEESS": "MOBILE_UPDATE_VERIFY_API_SUCEESS",
+    "MOBILE_UPDATE_VERIFY_API_END": "MOBILE_UPDATE_VERIFY_API_END",
+    "SEARCH_POWER_STATION_API_START": "SEARCH_POWER_STATION_API_START ",
+    "SEARCH_POWER_STATION_API_SUCCESS": "SEARCH_POWER_STATION_API_SUCCESS ",
+    "SEARCH_POWER_STATION_API_END": "SEARCH_POWER_STATION_API_END ",
+    "STRIPE_ADD_CARD_API_START": "STRIPE_ADD_CARD_API_START",
+    "STRIPE_ADD_CARD_API_END": "STRIPE_ADD_CARD_API_END",
+    "STRIPE_ADD_CARD_API_SUCEESS": "STRIPE_ADD_CARD_API_SUCEESS",
+    "STRIPE_GET_ALL_CARD_API_START": "STRIPE_GET_ALL_CARD_API_START",
+    "STRIPE_GET_ALL_CARD_API_SUCEESS": "STRIPE_GET_ALL_CARD_API_SUCEESS",
+    "STRIPE_GET_ALL_CARD_API_END": "STRIPE_GET_ALL_CARD_API_END",
+    "STRIPE_CHANGE_DEFAULT_CARD_API_START": "STRIPE_CHANGE_DEFAULT_CARD_API_START",
+    "STRIPE_CHANGE_DEFAULT_CARD_API_SUCEESS": "STRIPE_CHANGE_DEFAULT_CARD_API_SUCEESS",
+    "STRIPE_CHANGE_DEFAULT_CARD_API_END": "STRIPE_CHANGE_DEFAULT_CARD_API_END",
+    "STRIPE_CHARGE_API_START": "STRIPE_CHARGE_API_START",
+    "STRIPE_CHARGE_API_SUCEESS": "STRIPE_CHARGE_API_SUCEESS",
+    "STRIPE_CHARGE_API_END": "STRIPE_CHARGE_API_END",
+    "STRIPE_DELETE_CARD_API_START": "STRIPE_CHARGE_API_START",
+    "STRIPE_DELETE_CARD_API_SUCEESS": "STRIPE_DELETE_CARD_API_SUCEESS",
+    "STRIPE_DELETE_CARD_API_END": "STRIPE_DELETE_CARD_API_END",
+    "REFUND_API_START": "REFUND_API_START",
+    "REFUND_API_SUCEESS": "REFUND_API_SUCEESS",
+    "REFUND_API_END": "REFUND_API_END",
+    "PAYMENT_HISTORY_API_START": "PAYMENT_HISTORY_API_START",
+    "PAYMENT_HISTORY_API_SUCEESS": "PAYMENT_HISTORY_API_SUCEESS",
+    "PAYMENT_HISTORY_API_END": "PAYMENT_HISTORY_API_END",
+    "POWER_BANK_RENT_API_START": "POWER_BANK_RENT_API_START",
+    "POWER_BANK_RENT_API_SUCCESS": "POWER_BANK_RENT_API_SUCEESS",
+    "POWER_BANK_RENT_API_END": "POWER_BANK_RENT_API_END",
+    "POWER_BANK_RTURN_API_START": "POWER_BANK_RTURN_API_START",
+    "POWER_BANK_RTURN_API_SUCEESS": "POWER_BANK_RTURN_API_SUCEESS",
+    "POWER_BANK_RTURN_API_END": "POWER_BANK_RTURN_API_END",
+    "POWER_BANK_RENT_HISTORY_API_START": "POWER_BANK_RTURN_API_START",
+    "POWER_BANK_RENT_HISTORY_API_SUCEESS": "POWER_BANK_RENT_HISTORY_API_SUCEESS",
+    "POWER_BANK_RENT_HISTORY_API_END": "POWER_BANK_RENT_HISTORY_API_END",
+    "POWER_BANK_RENT_DETAILS_API_START": "POWER_BANK_RENT_DETAILS_API_START",
+    "POWER_BANK_RENT_DETAILS_API_SUCEESS": "POWER_BANK_RENT_DETAILS_API_SUCEESS",
+    "POWER_BANK_RENT_DETAILS_API_END": "POWER_BANK_RENT_DETAILS_API_END",
+    "POWER_BANK_RENT_EST_API_START": "POWER_BANK_RENT_EST_API_START",
+    "POWER_BANK_RENT_EST_API_SUCEESS": "POWER_BANK_RENT_EST_API_SUCEESS",
+    "POWER_BANK_RENT_EST_API_END": "POWER_BANK_RENT_EST_API_END",
+    "USER_LIST_API_START": "USER_LIST_API_START ",
+    "USER_LIST_API_SUCEESS": "USER_LIST_API_SUCEESS ",
+    "USER_LIST_API_END": "USER_LIST_API_END ",
+    "USER_DELETE_API_START": "USER_DELETE_API_START ",
+    "USER_DELETE_API_SUCEESS": "USER_DELETE_API_SUCEESS ",
+    "USER_DELETE_API_END": "USER_DELETE_API_END ",
+    "SEARCH_POWER_STATION_BY_ID_API_START": "SEARCH_POWER_STATION_BY_ID_API_START ",
+    "SEARCH_POWER_STATION_BY_ID_API_SUCCESS": "SEARCH_POWER_STATION_BY_ID_API_SUCCESS ",
+    "SEARCH_POWER_STATION_BY_ID_API_END": "SEARCH_POWER_STATION_BY_ID_API_END ",
+    "GET_MERCHANT_LOCATIONS_API_START": "GET_MERCHANT_LOCATIONS_API_START ",
+    "GET_MERCHANT_LOCATIONS_API_SUCCESS": "GET_MERCHANT_LOCATIONS_API_SUCCESS ",
+    "GET_MERCHANT_LOCATIONS_API_END": "GET_MERCHANT_LOCATIONS_API_END ",
+    "GET_USER_DETAILS_BY_ID_API_START": "GET_USER_DETAILS_BY_ID_API_START",
+    "GET_USER_DETAILS_BY_ID_API_SUCCESS": "GET_USER_DETAILS_BY_ID_API_SUCCESS",
+    "GET_USER_DETAILS_BY_ID_API_END": "GET_USER_DETAILS_BY_ID_API_END",
+    "GET_ALL_ADMINS_API_START": "GET_ALL_ADMINS_API_START ",
+    "GET_ALL_ADMINS_API_SUCCESS": "GET_ALL_ADMINS_API_SUCCESS ",
+    "GET_ALL_ADMINS_API_END": "GET_ALL_ADMINS_API_END ",
+    "GET_ALL_MERCHANTS_API_START": "GET_ALL_MERCHANTS_API_START ",
+    "GET_ALL_MERCHANTS_API_SUCCESS": "GET_ALL_MERCHANTS_API_SUCCESS ",
+    "GET_ALL_MERCHANTS_API_END": "GET_ALL_MERCHANTS_API_END ",
+    "GET_ALL_TECHNICIANS_API_START": "GET_ALL_TECHNICIANS_API_START ",
+    "GET_ALL_TECHNICIANS_API_SUCCESS": "GET_ALL_TECHNICIANS_API_SUCCESS ",
+    "GET_ALL_TECHNICIANS_API_END": "GET_ALL_TECHNICIANS_API_END ",
+    "DB_CONNECTION": "DB_CONNECTION ",
+    "IOT_TOKEN_FETCH_FAIL": "FAIL TO FETCH IOT SERVICE TOKEN ",
+    "IOT_TOKEN_FETCH_SUCCESS": "IOT SERVICE TOKEN FETCHED ",
+    "IOT_POWER_STATION_SYNC_START": "IOT POWER STATION PROCESS START ",
+    "IOT_POWER_STATION_SYNC_SUCCESS": "IOT POWER STATION PROCESS SUCCESS ",
+    "IOT_POWER_STATION_SYNC_FAIL": "IOT POWER STATION PROCESS FAIL ",
+    "IOT_POWER_STATION_FETCH_SUCCESS": "IOT POWER STATION FETCHING PROCESS SUCCESS ",
+    "IOT_POWER_STATION_FETCH_FAIL": "IOT POWER STATION FETCHING PROCESS FAIL ",
+    "IOT_POWER_STATION_UPDATE_SUCCESS": "IOT POWER STATION UPDATE PROCESS SUCCESS ",
+    "IOT_POWER_STATION_UPDATE_FAIL": "IOT POWER STATION UPDATE PROCESS FAIL ",
+    "IOT_POWER_STATION_IS_AVAILABLE_TO_ASSIGN_SUCCESS": "IOT POWER STATION IS AVAILABLE FOR ASSIGN | ",
+    "IOT_POWER_STATION_IS_AVAILABLE_TO_ASSIGN_FAIL": "IOT POWER STATION IS NOT AVAILABLE FOR ASSIGN | ",
+    "CREATE_LOCATION_API_FAIL": "LOCATION SERVICE FAIL TO CREATE LOCATION OBJECT | ",
+    "COULD_NOT_CONNECT_TO_THE_DATABASE": "COULD NOT CONNECT TO THE MONGO DB PLEASE CHECK YOUR URI | ",
+    "POWER_STATION_DETACH_PROCESS_START": "POWER STATION DETACH PROCESS START | ",
+    "POWER_STATION_DETACH_PROCESS_END": "POWER STATION DETACH PROCESS END | ",
+    "GET_THE_LOCATION_DATA_BY_ID_START": "GET THE LOCATION DATA BY ID START | ",
+    "GET_THE_LOCATION_DATA_BY_ID_END": "GET THE LOCATION DATA BY ID END | ",
+    "GET_THE_LOCATION_DATA_BY_ID_SUCCESS": "GET THE LOCATION DATA BY ID SUCCESS | ",
+    "GET_THE_LOCATION_DATA_BY_ID_FAIL": "GET THE LOCATION DATA BY ID FAIL | ",
+    "LOCATION_SEARCH_START": "LOCATION SEARCH START | ",
+    "LOCATION_SEARCH_END": "LOCATION SEARCH END | ",
+    "SEARCH_POWER_STATION_BY_QUERY_START": "SEARCH POWER STATIONS BY QUERY START | ",
+    "SEARCH_POWER_STATION_BY_QUERY_END": "SEARCH POWER STATIONS BY QUERY END | ",
+    "SEARCH_POWER_STATION_BY_QUERY_SUCCESS": "SEARCH POWER STATIONS BY QUERY SUCCESS | ",
+    "LOCATION_COVER_IMAGE_UPLOAD_START": "LOCATION COVER IMAGE UPLOAD START | ",
+    "LOCATION_COVER_IMAGE_UPLOAD_END": "LOCATION COVER IMAGE UPLOAD END | ",
+    "POWER_STATION_LOCATION_UPDATED_SUCCESS": "POWER STATION LOCATION UPDATE SUCCESS | ",
+    "POWER_STATION_LOCATION_UPDATED_FAIL": "POWER STATION LOCATION UPDATE FAIL | ",
+    "POWER_STATION_FREEZE_START": "POWER STATION FREEZE PROCESS START | ",
+    "POWER_STATION_FREEZE_END": "POWER STATION FREEZE PROCESS END | "
+  },
+  "FORGET_PASSWORD_TEMPLATE": "mail/template/layout.html",
+  "UTF8": "utf8",
+  "MAIL_FOLDER_PATH": "mail/",
+  "ACCEPT_LANGUAGE": "accept-language",
+  "USER_TYPE": {
+    "SUPER_ADMIN": "SUPER_ADMIN",
+    "MERCHANT": "MERCHANT",
+    "ADMIN": "ADMIN",
+    "TECHNICIAN": "TECHNICIAN",
+    "END_USER": "END_USER"
+  },
+  "TEST_API_URL": {
+    "LOGIN": "/v1/authenticate/login",
+    "REFRESH_TOKEN": "/v1/authenticate/refreshToken",
+    "PERMISSION": "/v1/permission",
+    "POWER_STATION_CREATE": "/v1/power-station/create",
+    "GET_ALL_POWER_STATION": "/v1/power-station/all",
+    "POWER_STATION": "/v1/power-station/",
+    "ROLE": "/v1/role",
+    "SINGLE_ROLE": "/v1/role/",
+    "SIGN_UP": "/v1/authenticate/signUp",
+    "CHANGE_PASSWORD": "/v1/authenticate/changePassword",
+    "CONFIRM_FORGET_PASSWORD": "/v1/authenticate/confirmForgetPassword",
+    "PROFILE": "/v1/authenticate/profile/"
+  },
+  "POINT": "Point",
+  "DISTANCE": "distance",
+  "MIGRATION_DETAILS": {
+    "SUPER_ADMIN_DETAILS": {
+      "NAME": "super admin",
+      "EMAIL": "superadmin@gmail.com",
+      "PASSWORD": "$2b$05$paw/mVLXoAyQi6GlbT70Iu0/NtxVrVyNUEjD0WUKB78oOeltd3Mb."
+    },
+    "ROLE": [
+      {
+        "name": "Admin"
+      },
+      {
+        "name": "MERCHANT"
+      },
+      {
+        "name": "TECHNICIAN"
+      }
+    ],
+    "PERMISSION": [
+      {
+        "name": "merchant create",
+        "value": "merchant.create"
+      },
+      {
+        "name": "merchant delete",
+        "value": "merchant.delete"
+      },
+      {
+        "name": "merchant update",
+        "value": "merchant.update"
+      },
+      {
+        "name": "merchant view",
+        "value": "merchant.view"
+      },
+      {
+        "name": "sale view",
+        "value": "sale.view"
+      },
+      {
+        "name": "sale refund",
+        "value": "sale.refund"
+      },
+      {
+        "name": "location view",
+        "value": "location.view"
+      },
+      {
+        "name": "location edit",
+        "value": "location.edit"
+      },
+      {
+        "name": "location create",
+        "value": "location.create"
+      },
+      {
+        "name": "location delete",
+        "value": "location.delete"
+      },
+      {
+        "name": "power station view",
+        "value": "power-station.view"
+      },
+      {
+        "name": "power station create",
+        "value": "power-station.create"
+      },
+      {
+        "name": "power station delete",
+        "value": "power-station.delete"
+      },
+      {
+        "name": "power station edit",
+        "value": "power-station.edit"
+      },
+      {
+        "name": "technician create",
+        "value": "technician.create"
+      },
+      {
+        "name": "technician delete",
+        "value": "technician.delete"
+      },
+      {
+        "name": "technician update",
+        "value": "technician.update"
+      },
+      {
+        "name": "technician view",
+        "value": "technician.view"
+      },
+      {
+        "name": "admin create",
+        "value": "admin.create"
+      },
+      {
+        "name": "admin delete",
+        "value": "admin.delete"
+      },
+      {
+        "name": "admin update",
+        "value": "admin.update"
+      },
+      {
+        "name": "admin view",
+        "value": "admin.view"
+      },
+      {
+        "name": "end-user view",
+        "value": "end-user.view"
+      },
+      {
+        "name": "permissions edit",
+        "value": "permissions.edit"
+      },
+      {
+        "name": "permissions create",
+        "value": "permissions.create"
+      },
+      {
+        "name": "permissions delete",
+        "value": "permissions.delete"
+      },
+      {
+        "name": "permissions update",
+        "value": "permissions.update"
+      }
+    ],
+    "ERROR_MESSAGES": {
+      "USER_CREATION": "This is an error in user creatation. Could not complete migration",
+      "USER_DELETE": "This is an error in user delete. Could not complete migration",
+      "ROLE_CREATION": "This is an error in role creatation. Could not complete migration",
+      "ROLE_DELETE": "This is an error in role delete. Could not complete migration",
+      "PERMISSION_CREATION": "This is an error in permission create. Could not complete migration",
+      "PERMISSION_DELETE": "This is an error in permission delete. Could not complete migration",
+      "CAN_NOT_UPDATE_DEFAULT_LOGIN": "You can not update your default login type",
+      "INVALID_NAME": "Enter Valid Name"
+    }
+  },
+  "ERROR_MESSAGES": {
+    "INVALID_POWER_BANK": "Invalid Power Bank",
+    "POWER_STATION_OFFLINE": "Power Station is Offline",
+    "POWER_STATION_NOT_ACTIVATED": "Power Station is not activated",
+    "NO_AVILABLE_POWER_BANKS": "There are no avilable power banks",
+    "ACCOUNT_SUSPENDED": "Your Account Has Been Suspended",
+    "CAN_NOT_RENT_POWER_BANK": "You can not rent power banks",
+    "CAN_NOT_DELETE_DEFAULT_ROLE": "You can not delete default role",
+    "ROLE_ALREADY_ASSIGNED": "Role already assigned",
+    "ALREADY_REFUNDED": "Transaction Already Refunded",
+    "USER_ASSIGNED_TO_LOCATION": "User Already Assigned to Location",
+    "LOCATION_ASSIGNED_TO_POWER_STATION": "Location Assigned to a Power station",
+    "NOT_ELIGIBLE": "You are not eligible to request payout",
+    "INVALID_STATUS": "Invalid Status"
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "requiresCompatibilities": ["EC2"],
+  "executionRoleArn": "arn:aws:iam::143773104352:role/pb-ecs-inst-role",
+  "containerDefinitions": [{
+    "name": "pbbe",
+    "image": "$IMAGE_NAME",
+    "memory": 256,
+    "cpu": 256,
+    "essential": true,
+    "command": ["runtime/run.sh"],
+    "environment": [{
+        "name": "AWS_ACCESS_KEY_ID",
+        "value": "$AWS_ACCESS_KEY"
+      },
+      {
+        "name": "AWS_SECRET_ACCESS_KEY",
+        "value": "$AWS_ACCESS_SECRET"
+      },
+      {
+        "name": "DB_USERNAME",
+        "value": "$DB_USERNAME"
+      },
+      {
+        "name": "DB_PASSWORD",
+        "value": "$DB_PASSWORD"
+      },
+      {
+        "name": "DB_PREFIX",
+        "value": "$DB_PREFIX"
+      },
+      {
+        "name": "DB_PORT",
+        "value": "$DB_PORT"
+      },
+      {
+        "name": "DB_HOST",
+        "value": "$DB_HOST"
+      },
+      {
+        "name": "DB_DATABASE",
+        "value": "$DB_DATABASE"
+      },
+      {
+        "name": "facebook_api",
+        "value": "$facebook_api"
+      },
+      {
+        "name": "google_api",
+        "value": "$google_api"
+      },
+      {
+        "name": "STRIPE_SECREATE_KEYE",
+        "value": "$STRIPE_SECREATE_KEYE"
+      },
+      {
+        "name": "IOT_RETURN_URL",
+        "value": "$IOT_RETURN_URL"
+      }
+    ],
+    "portMappings": [{
+      "containerPort": 3000,
+      "protocol": "tcp",
+      "hostPort": 3000
+    }],
+    "logConfiguration": {
+      "logDriver": "awslogs",
+      "options": {
+        "awslogs-group": "awslogs-pb-be-ecs",
+        "awslogs-region": "eu-west-3",
+        "awslogs-stream-prefix": "pb-be"
+      }
+    }
+  }],
+  "volumes": [],
+  "networkMode": "bridge",
+  "placementConstraints": [],
+  "taskRoleArn": "arn:aws:iam::143773104352:role/pb-ecs-inst-role",
+  "family": "pbbe"
+}
